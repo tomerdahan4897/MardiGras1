@@ -1,0 +1,180 @@
+.navContainer {
+    background-color: $color2;
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+    border-bottom: solid black 2px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 7;
+
+    a {
+        flex-basis: 10%;
+    }
+}
+
+
+.logo {
+    height: 100px;
+    width: 250px;
+    margin-left: 40px;
+}
+
+
+
+.mainNav {
+    font-size: $navFontSize;
+    flex-basis: 70%;
+
+}
+
+//li
+.nav-item {
+    font-family: $titleFont1;
+    text-align: center;
+    width: 120px;
+}
+
+
+//a
+a.nav-link {
+    color: $color1;
+    transition: all 0.5s ease-out;
+    border-right: 3px solid $color1;
+}
+
+.a1 {
+    background-color: $color3;
+}
+
+.a2 {
+    background-color: $color4;
+}
+
+.a3 {
+    background-color: $color5;
+}
+
+.a4 {
+    background-color: $color3;
+}
+
+.a5 {
+    background-color: $color4;
+}
+
+a.a6 {
+    background-color: $color5;
+    border-right: none;
+}
+
+.nav-item:hover a.nav-link {
+    color: white;
+    background-color: $color1;
+}
+
+
+.socialNavBar {
+    flex-basis: 20%;
+
+    a {
+        margin: 0px 5px;
+
+        img {
+            height: 40px;
+            width: 40px;
+        }
+
+        img:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+
+
+#mainPic {
+    width: 100%;
+    height: 400px;
+    margin-top: 100px;
+}
+
+#hamburger {
+    display: none;
+    font-size: 3rem;
+    color: $color5;
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 1270px) {
+    .logo {
+        position: absolute;
+        right: 32%;
+        top: 5%;
+        width: 450px;
+    }
+
+    .socialNavBar {
+        position: relative;
+        right: 5%;
+    }
+
+
+    #hamburger {
+        position: relative;
+        display: block;
+        left: -5%;
+        top: 5%;
+    }
+
+    ul {
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .active {
+        display: block;
+    }
+
+    .passive {
+        display: none !important;
+    }
+
+    a.a6 {
+        border-right: 3px solid $color1 ;
+        border-bottom: 3px solid $color1 ;
+    }
+
+}
+
+@media (max-width:1150px) {
+    .socialNavBar {
+        display: grid;
+        grid-template-columns: repeat(2, 40px);
+        grid-template-rows: repeat(2, 40px);
+        gap: 10px;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .logo {
+        width: 250px;
+        right: 38%;
+    }
+}
+
+@media (max-width: 500px) {
+    .logo {
+        right: 33%;
+        width: 140px;
+    }
+}

@@ -1,0 +1,47 @@
+//import fonts from google
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+//variables
+$color1: #0D0D0D;
+$color2: #F2F2F2;
+$color3: #F2CC07;
+$color4: #8CBF3F;
+$color5: #9453A6;
+$titleFont1: 'Pattaya';
+$titleFont2: 'Henny Penny';
+$textFont: 'Roboto', 'sans-serif';
+$titleFontSize: 3rem;
+$textFontSize: 1.5rem;
+$navFontSize: 1.2rem;
+
+h1 {
+    font-family: $titleFont2;
+}
+
+h2 {
+    font-family: $titleFont1;
+}
+
+p {
+    font-family: $textFont;
+}
+
+.pageTittle {
+    font-family: $titleFont1;
+    color: $color5;
+    text-align: center;
+    margin: 50px;
+    font-size: 3rem;
+    text-decoration: underline;
+    font-weight: bold;
+    margin-bottom: 40px;
+    padding-top: 40px;
+}

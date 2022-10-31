@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mardi Gras: Contact Us</title>
+    <link rel="stylesheet" href="sass/main.css">
+    <link rel="shortcut icon" href="pics/topIcon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="navContainer">
+            <a href="index.html">
+                <img class="logo" src="pics/logo.png" alt="MardiGras">
+            </a>
+            <div id="hamburger">&#x2630;</div>
+            <nav class="mainNav">
+                <ul class="nav justify-content-center active passive" id="UlNav">
+                    <li class="nav-item">
+                        <a class="nav-link a1" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link a2" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link a3" href="media.html">Media</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link a4" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link a5" href="trivia.html">Trivia
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link a6" style="background-color: black; color: white" href="contact.html">Contact
+                            Us</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="socialNavBar">
+                <a href="https://www.facebook.com/MardiGrasNewOrleans" target="_blank"><img src="pics/facebook.png"
+                        alt="facebook"></a>
+                <a href="https://www.youtube.com/watch?v=C8mJ2C2cbd0" target="_blank"><img src="pics/youtube.png"
+                        alt="youtube"></a>
+                <a href="https://www.instagram.com/mardigrasneworleans/" target="_blank"><img src="pics/instagram.png"
+                        alt="instagram"></a>
+                <a href="https://twitter.com/MardiGrasNOLA" target="_blank"><img src="pics/twitter.png"
+                        alt="twitter"></a>
+            </div>
+        </div>
+        <img id="mainPic" src="pics/mainPic.jpg" alt="festival">
+    </header>
+
+    <h2 class="pageTittle">Contact Us</h2>
+
+
+    <!-- form  -->
+    <form class="contactForm my__form">
+        <div class="form-floating no-border">
+            <!-- class="form-control" -->
+            <input type="text" id="firstName" class="form-control shadow-none" placeholder="First Name">
+            <label for="floatingFN">First Name</label>
+            <div class="feedback hidden" id="firstNameErrorMessage">&#9758; please enter your first name!</div>
+        </div>
+
+
+        <div class="form-floating">
+            <input type="text" id="lastName" class="form-control shadow-none" placeholder="Last Name">
+            <label for="floatingLN">Last Name</label>
+            <div class="feedback hidden" id="lastNameErrorMessage">&#9758; please enter your last name!</div>
+        </div>
+        <div class="form-floating">
+            <input type="email" class="form-control shadow-none" id="mail" placeholder="Email">
+            <label for="floatingMail">Email</label>
+            <div class="feedback hidden" id="emailErrorMessage">&#9758; please enter correct mail!</div>
+        </div>
+        <div class="form-floating">
+            <input type="textarea" id="textBox" class="form-control shadow-none" placeholder="Text Area">
+            <label for="floatingText">Text Area</label>
+            <div class="feedback hidden" id="textAreaErrorMessage">&#9758; please enter at least 10 letters!</div>
+        </div>
+        <div class="btn_con">
+            <input type="button" value="Send" id="submitBtn" class="my_btn submitBtn"> <br>
+            <input type="reset" value="Reset" id="resetBtn" class="my_btn resetBtn">
+        </div>
+    </form>
+
+
+
+
+
+    <footer>
+        <div class="footerContainer">
+
+            <div id="footerLogo"><img id="footerImg" src="pics/footerLogo.png" width="200px" height="250px"></div>
+            <div id="email">
+                <img src="pics/email.png">
+                <h6>press@mardigrasneworleans.com</h6>
+            </div>
+            <div id="address">
+                <img src="pics/location.png">
+                <h6>1380 Port of New Orleans Pl.<br> New Orleans, LA 70130</h6>
+            </div>
+            <div id="phone">
+                <img src="pics/call.png">
+                <h6>+1 (504) 361-7821</h6>
+            </div>
+        </div>
+        <p id="copyRight">&#169; 2022 Tomer Dahan</p>
+    </footer>
+
+    <script src="js/navFun.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="js/validatedForm.js"></script>
+</body>
+
+</html>

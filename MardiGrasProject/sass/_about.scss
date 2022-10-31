@@ -1,0 +1,157 @@
+ .aboutContiner {
+     margin: 0px 100px 100px 100px;
+ }
+
+ .info,
+ .major {
+     margin-bottom: 70px;
+     font-size: 1.2rem;
+     text-align: justify;
+     line-height: 1.5;
+
+ }
+
+ .majorContainer {
+     display: flex;
+     flex-direction: row;
+
+
+     .major {
+         flex-basis: 75%;
+
+     }
+
+     .major h2 {
+         text-align: left;
+         color: $color5;
+         font-size: 2.3rem;
+     }
+
+     .major p {
+         padding: 15px;
+         line-height: 1.5;
+         text-align: left;
+     }
+
+     .major p span {
+         font-weight: bold;
+         text-decoration: underline;
+         font-size: 1.5rem;
+         font-family: $titleFont1;
+         color: $color4;
+     }
+
+     #majorPic {
+         flex-basis: 25%;
+         display: inline;
+         border-radius: 50%;
+         border: 10px solid $color3;
+         height: 350px; //280px
+         width: 250px;
+         align-self: center;
+     }
+ }
+
+ .cityPics {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+     gap: 15px;
+     margin-bottom: 70px;
+
+     img {
+         width: 100px;
+         height: 300px;
+     }
+
+
+     #cp1,
+     #cp2,
+     #cp3,
+     #cp4 {
+         flex-basis: 25%;
+     }
+ }
+
+ .map {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+
+     .mapouter {
+         flex-basis: 50%;
+     }
+
+     .openHour {
+         flex-basis: 50%;
+         text-align: center;
+         align-self: center;
+         border: 3px dashed $color5;
+         padding: 20px;
+         gap: 10px;
+
+         h2 {
+             font-family: $titleFont1;
+             color: $color4;
+             font-size: 2.5rem;
+             text-decoration: underline;
+         }
+
+         p {
+             font-family: $textFont;
+             color: $color1;
+             font-size: 1.5rem;
+
+             span {
+                 font-weight: bold;
+                 font-size: 1.7rem;
+                 text-decoration: underline;
+             }
+         }
+     }
+ }
+
+ @media (max-width:1000px) {
+     .majorContainer {
+         display: flex;
+         flex-direction: column;
+     }
+
+     #majorPic {
+         margin-bottom: 70px;
+     }
+
+     .cityPics {
+         display: flex;
+         flex-direction: column;
+
+         img {
+             width: 75%;
+             height: 300px;
+             margin: 0 auto;
+         }
+     }
+
+ }
+
+ @media (max-width:1300px) {
+     .map {
+         display: flex;
+         flex-direction: column;
+     }
+
+     .mapouter {
+         margin: 0 auto;
+         margin-bottom: 50px;
+     }
+
+     #mapFrame {
+         width: 100vw;
+     }
+ }
+
+ @media (max-width: 700px) {
+     .mapouter {
+         display: none;
+     }
+ }

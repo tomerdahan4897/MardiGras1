@@ -1,0 +1,48 @@
+@media (max-width: 900px) {
+    .main__accordion {
+        width: 100vw;
+    }
+}
+
+.main__accordion {
+    width: 80vw;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+.my__accordion__item {
+    border: 1px solid rgb(198, 198, 198);
+    color: $color1 !important;
+}
+
+.my__item__color1 {
+    background-color: $color5 !important;
+}
+
+.my__item__color2 {
+    background-color: $color4 !important;
+}
+
+.my__item__color3 {
+    background-color: $color3 !important;
+}
+
+.my__item__color4 {
+    background-color: $color2 !important;
+}
+
+.my__accordion__text {
+    background-color: $color2;
+    text-align: center;
+    font-family: $textFont;
+    border: 2px $color1 dashed;
+}
+
+.my__text1 {
+    background-color: $color5;
+}
+
+.my__text2 {
+    background-color: $color4;
+}
